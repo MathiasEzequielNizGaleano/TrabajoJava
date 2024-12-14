@@ -95,7 +95,7 @@ public class ProductoController {
     
     @GetMapping("/estadisticas")
     public ResponseEntity<?> obtenerEstadisticas() {
-        // Calcular la cantidad total de productos
+        
         int cantidadTotal = listaProductos.size();
 
         double promedioPrecios = listaProductos.stream()
